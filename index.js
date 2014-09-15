@@ -8,11 +8,15 @@ app.get('/', function(req, res){
 
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
+ 	io.emit('chat message', 'A user has joined');
+  	socket.on('disconnect', function(){
+		console.log('user disconnected');
+  	});
+  	socket.on('chat message', function(msg){
+    	io.emit('chat message', msg);
+ 	});
 });
 
-http.listen(3000, function(){
+http.listen(3000, function() {
   console.log('HTTP Server Running... Listening On *3000');
 });
