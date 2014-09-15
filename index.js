@@ -17,6 +17,6 @@ io.on('connection', function(socket){
  	});
 });
 
-http.listen(8080, function() {
-  console.log('HTTP Server Running... Listening On *8080');
+http.listen(3000, function() {
+  console.log('HTTP Server Running... Listening On *3000');
 });
