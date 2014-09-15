@@ -14,5 +14,5 @@ io.on('connection', function(socket){
 });
 
 http.listen(3000, function(){
-  console.log('listening on *:3000');
+  console.log('HTTP Server Running... Listening On *3000');
 });
