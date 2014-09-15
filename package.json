@@ -2,5 +2,7 @@
   "name": "nodechat",
   "version": "0.0.1",
   "description": "socket.io webchat",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.9.0"
+  }
 }
